@@ -117,6 +117,8 @@ url("imagenes/pinturalogo.jpg") ;
 background-color: rgb(43, 40, 40);;
 color: white;
 text-align: center;
+display: flex;
+
 }
 
 #nuestros-programas .container
@@ -170,7 +172,51 @@ padding: 100px 12px;
     ),
     url("imagenes/asesoramiento.jpg") ;
 }
-
+.carta:nth-child(4)
+{
+    background-image: linear-gradient(
+        0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("imagenes/altura.webp") ;
+}
+.carta:nth-child(5)
+{
+    background-image: linear-gradient(
+        0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("imagenes/interior.jpg") ;
+}
+.carta:nth-child(6)
+{
+    background-image: linear-gradient(
+        0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("imagenes/exterior.jpg") ;
+}
+.carta:nth-child(7)
+{
+    background-image: linear-gradient(
+        0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("imagenes/asesoramiento1.jpg") ;
+}
+.carta:nth-child(8)
+{
+    background-image: linear-gradient(
+        0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("imagenes/acbados.jpeg") ;
+}
 #contactos .container
 {
     text-align: center;
@@ -198,9 +244,9 @@ padding: 100px 12px;
 }
 
 #final p
-{
+{   
     justify-content: center;
-    width: 80%;
+    width: 60%;
     text-align: justify;
     
 }
@@ -214,7 +260,7 @@ padding: 100px 12px;
 
 
 #final h2
-{
+{   margin: 2%;
     font-size: 9vw;
 }
 #final button
@@ -294,6 +340,8 @@ justify-content: space-evenly;
     height: 500px;
     width: 400px;
 }
+
+
 #somos-proya h2
 {
     margin: 0px;
@@ -303,6 +351,9 @@ justify-content: space-evenly;
 {
     display: flex;
     justify-content: center;
+    display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Divide la fila en tres columnas de igual tamaño */
+      grid-gap: 10px; /* Espacio entre los divs */
 }
 
 
@@ -330,6 +381,7 @@ background-size: 100% 120px;
 background-repeat: no-repeat;
 background-position-y: 0;
 background-color: rgba(94, 90, 90, 0.5);
+border: 1px solid black;
 }
  
 #contactos
